@@ -18,7 +18,9 @@ const GameCard = ({ game }: Props) => {
           ></PlatformIconList>
           <CriticScore score={game.metacritic}></CriticScore>
         </HStack>
-        <Heading fontSize={"2xl"}>{game.name}</Heading>
+        <Heading height={"50px"} fontSize={"2xl"}>
+          {game.name}
+        </Heading>
       </CardBody>
     </Card>
   );

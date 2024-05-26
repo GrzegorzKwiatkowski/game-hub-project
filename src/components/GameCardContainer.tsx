@@ -1,12 +1,21 @@
 import { Box } from "@chakra-ui/react";
 import { ReactNode } from "react";
+import ColorModeSwitch from "./ColorModeSwitch";
 
 interface Props {
   children: ReactNode;
 }
 const GameCardContainer = ({ children }: Props) => {
   return (
-    <Box borderRadius={40} overflow={"hidden"}>
+    <Box
+      // boxShadow={
+      //   ColorMode === "light"
+      //     ? " 1px 1px 1px 1px lightgrey,  1px 1px 1px lightgrey;"
+      //     : ""
+      // }
+      borderRadius={40}
+      overflow={"hidden"}
+    >
       {children}
     </Box>
   );
